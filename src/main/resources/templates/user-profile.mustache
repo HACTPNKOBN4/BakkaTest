@@ -1,0 +1,23 @@
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BakkaTest.com</title>
+    </head>
+    <body>
+        <a href="/main">назад</a>
+        <h3> Профиль</h3>
+        Fullname: {{fullname}}
+        <h2></h2>
+
+        <form action="/logout" method="post">
+            <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
+            <button type="submit">Выйти из профиля</button>
+        </form>
+
+        <form method="post" action="/delete">
+            <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
+            <button type="submit">Удалить профиль</button>
+        </form>
+    </body>
+</html>

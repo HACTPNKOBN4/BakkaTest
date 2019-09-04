@@ -1,0 +1,18 @@
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BakkaTest.com</title>
+    </head>
+    <body>
+        <a href="/main">назад</a>
+        <h3> Заказы</h3>
+        {{#Orders}}
+            <div>
+                <b>{{id}}</b>
+                <span>{{date}}</span>
+                <b>{{totalSumm}}</b>
+            </div>
+        {{/Orders}}
+    </body>
+</html>
